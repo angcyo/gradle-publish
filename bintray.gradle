@@ -49,6 +49,12 @@ def pomConfig = {
             email DEVELOPER_EMAIL
         }
     }
+    scm {
+        url POM_SCM_URL
+        connection POM_SCM_CONNECTION
+        developerConnection POM_SCM_DEV_CONNECTION
+    }
+
 }
 
 publishing {
@@ -75,7 +81,7 @@ afterEvaluate {
 }
 
 bintray {
-    user = hasProperty("bintrayUser")?getProperty("bintrayUser"):getProperty("BINTRAY_USER") 
+    user = hasProperty("bintrayUser")?getProperty("bintrayUser"):getProperty("BINTRAY_USER")
     key = hasProperty("bintrayKey")?getProperty("bintrayKey"):getProperty("BINTRAY_KEY")
 
     publications = ['mavenJava']
