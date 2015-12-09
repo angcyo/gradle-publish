@@ -37,7 +37,7 @@ javadoc {
 def pomConfig = {
     name PROJ_NAME
     url PROJ_WEBSITEURL
-    description PROJ_DESCRIPTION
+    description '--PROJ_DESCRIPTION'
     licenses {
         license {
             name "The Apache Software License, Version 2.0"
