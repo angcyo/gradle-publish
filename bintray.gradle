@@ -37,6 +37,7 @@ javadoc {
 def pomConfig = {
     name PROJ_NAME
     url PROJ_WEBSITEURL
+    //description PROJ_DESCRIPTION
     licenses {
         license {
             name "The Apache Software License, Version 2.0"
@@ -86,7 +87,8 @@ afterEvaluate {
 bintray {
     user = hasProperty("bintrayUser")?getProperty("bintrayUser"):getProperty("BINTRAY_USER")
     key = hasProperty("bintrayKey")?getProperty("bintrayKey"):getProperty("BINTRAY_KEY")
-
+    configurations = ['archives']
+    
     publications = ['mavenJava']
     publish = true
 
