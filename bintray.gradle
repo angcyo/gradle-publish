@@ -69,7 +69,7 @@ publishing {
 
             pom{
                 packaging 'aar'
-                description '--PROJ_DESCRIPTION'
+                //description PROJ_DESCRIPTION
             }
             pom.withXml {
                 def root = asNode()
