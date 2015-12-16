@@ -24,6 +24,7 @@ task javadocJar(type: Jar, dependsOn: javadoc) {
 
 javadoc {
     options{
+    	failOnError false
         encoding "UTF-8"
         charSet 'UTF-8'
         author true
