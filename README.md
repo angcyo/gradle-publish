@@ -2,7 +2,7 @@
 只介绍关于bintray.gradle的使用,其他介绍请自行百度参考;
 
 ##使用步骤
-###1.配置bintray账号(只针对Win用户)
+###1.配置[bintray](https://bintray.com/)账号(只针对Win用户)
 ```
 请在 C:\Users\Administrator\.gradle\gradle.properties 文件中配置:
 BINTRAY_USER=r***
